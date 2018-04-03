@@ -1,0 +1,66 @@
+@import "../node_modules/normalize.css/normalize.css";
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.col-6 {
+    float: left;
+    background: gray;
+    width: 50%;
+    padding: 20px;
+}
+
+.col-12 {
+    width: 100%;
+    float: left;
+    background: gray;
+    padding: 20px;
+}
+
+.db-xs {
+    display: none;
+}
+
+.hide-xs {
+    display: block;
+}
+
+@media screen and (max-width: 600px) {
+    .col-sm-4 {
+        width: 33.33%
+    }
+
+    .col-sm-8 {
+        width: 66.66%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .col-xs-12 {
+        width: 100%;
+    }
+
+    .db-xs {
+        display: block;
+    }
+
+    .hide-xs {
+        display: none;
+    }
+}
+
+.block-2 {
+    background: red;
+}
+
+.block-3 {
+    height: 300px;
+    background: blue;
+}
